@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
+    <title>Kratos Transport WebSocket 示例</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Kratos Transport WebSocket 鉴权示例</h1>
+    <p class="desc">先点击“普通登录”或“VIP 登录”，页面会通过 Cookie 保存 token。业务消息使用 text frame；WebSocket 握手时服务端从 Cookie 中读取 token 做鉴权，并每 30 秒发送一个 2B binary 心跳，客户端自动回复 0B binary pong。</p>
+    <div class="toolbar">
+        <button id="loginGuestBtn" class="btn btnSecondary" type="button">普通登录</button>
+        <button id="loginVipBtn" class="btn btnVip" type="button">VIP 登录</button>
+        <button id="logoutBtn" class="btn btnDanger" type="button">退出登录</button>
+    </div>
+    <div id="statusBar" class="statusBar">当前未登录，请先选择身份。</div>
+    <div class="tips">
+        <div>普通用户：只能发送公共消息。</div>
+        <div>VIP 用户：可发送公共消息，也可使用 <code>/vip 你的内容</code> 只投递给 VIP 用户。</div>
+    </div>
+    <p class="msg">Messages:</p>
+    <div id="messages" class="messages"></div>
+    <form id="msgForm" class="msgForm">
+        <label for="inputBox"></label><input
+            type="text"
+            placeholder="请输入消息，VIP 用户可使用 /vip 发送专属消息"
+            class="input"
+            id="inputBox"
+    />
+        <input type="submit" class="btn" value="Send"/>
+    </form>
+</div>
+<script type="text/javascript" src="chat_client.js"></script>
+</body>
+</html>
