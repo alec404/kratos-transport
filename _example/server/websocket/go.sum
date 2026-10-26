@@ -1,3 +1,7 @@
+github.com/alec404/kratos-transport v1.0.0 h1:wakwhrypCYOCivCoupQLkdE0ZddoQXl36CL871j/NnU=
+github.com/alec404/kratos-transport v1.0.0/go.mod h1:WY9yj16FccyLo1aTuobNnMySD57+6/zOQ0yQ5RSTYXM=
+github.com/alec404/kratos-transport/transport/websocket v1.0.0 h1:xelJ+XEvSxLRzVTkuapWZqXXFMXi6JeSSw7wvVLJ23o=
+github.com/alec404/kratos-transport/transport/websocket v1.0.0/go.mod h1:6gTz2HV82qr7UVD7RvPb0i5sdIAPAGCnDFzD/2gR//E=
 github.com/cespare/xxhash/v2 v2.3.0 h1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=
 github.com/cespare/xxhash/v2 v2.3.0/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=

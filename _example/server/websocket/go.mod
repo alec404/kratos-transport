@@ -4,10 +4,10 @@ go 1.25.0
 
 require github.com/go-kratos/kratos/v2 v2.9.2
 
-require github.com/alec404/kratos-transport/transport/websocket v0.0.0
+require github.com/alec404/kratos-transport/transport/websocket v1.0.0
 
 require (
-	github.com/alec404/kratos-transport v0.0.0 // indirect
+	github.com/alec404/kratos-transport v1.0.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/go-playground/form/v4 v4.3.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
@@ -22,8 +22,3 @@ require (
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-// Local development before the first public release.
-replace github.com/alec404/kratos-transport => ../../..
-
-replace github.com/alec404/kratos-transport/transport/websocket => ../../../transport/websocket
